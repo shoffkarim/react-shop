@@ -9,7 +9,7 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
-
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i");
 html,
 body {
 	height: 100%;
@@ -259,7 +259,7 @@ ol {
 }
 
 .accordion-area .panel-link {
-	/* background-image: url("../img/arrow-down.png"); */
+	background-image: url("../img/arrow-down.png");
 	background-repeat: no-repeat;
 	background-position: right 10px top 30px;
 }
@@ -273,13 +273,13 @@ ol {
 	right: 44px;
 }
 
-/* .accordion-area .panel-header .panel-link.collapsed {
+.accordion-area .panel-header .panel-link.collapsed {
 	background-image: url("../img/arrow-down.png");
 }
 
 .accordion-area .panel-link.active {
 	background-image: url("../img/arrow-up.png");
-} */
+}
 
 .accordion-area .panel-link.active {
 	background-color: transparent;

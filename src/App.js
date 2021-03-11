@@ -3,11 +3,11 @@
 import './css/animate.css';
 import './css/bootstrap.min.css';
 import logo from './img/logo.png';
-// import './css/flaticon.css';
-// import './css/font-awesome.min.css';
-// import './css/jquery-ui.min.css';
-// import './css/owl-carousel.min.css';
-// import './css/slicknav.min.css';
+import './css/flaticon.css';
+import './css/font-awesome.min.css';
+import './css/jquery-ui.min.css';
+import './css/owl.carousel.min.css';
+import './css/slicknav.min.css';
 import './css/style.css';
 
 function App() {
@@ -186,7 +186,7 @@ function App() {
             <div className="col-md-4 p-0 feature">
               <div className="feature-inner">
                 <div className="feature-icon">
-                  <img src="./src/img/icons/1.png" alt="#" />
+                  <img src="/img/icons/1.png" alt="#" />
                 </div>
                 <h2>Fast Secure Payments</h2>
               </div>
@@ -194,7 +194,7 @@ function App() {
             <div className="col-md-4 p-0 feature">
               <div className="feature-inner">
                 <div className="feature-icon">
-                  <img src="img/icons/2.png" alt="#" />
+                  <img src="/img/icons/2.png" alt="#" />
                 </div>
                 <h2>Premium Products</h2>
               </div>
@@ -202,7 +202,7 @@ function App() {
             <div className="col-md-4 p-0 feature">
               <div className="feature-inner">
                 <div className="feature-icon">
-                  <img src="img/icons/3.png" alt="#" />
+                  <img src="/img/icons/3.png" alt="#" />
                 </div>
                 <h2>Free & fast Delivery</h2>
               </div>
@@ -219,7 +219,7 @@ function App() {
           <div className="product-slider owl-carousel">
             <div className="product-item">
               <div className="pi-pic">
-                <img src="./img/product/1.jpg" alt="" />
+                <img src="/img/product/1.jpg" alt="" />
                 <div className="pi-links">
                   <a href="#" className="add-card">
                     <i className="flaticon-bag"></i>
@@ -238,7 +238,7 @@ function App() {
             <div className="product-item">
               <div className="pi-pic">
                 <div className="tag-new">New</div>
-                <img src="./img/product/2.jpg" alt="" />
+                <img src="/img/product/2.jpg" alt="" />
                 <div className="pi-links">
                   <a href="#" className="add-card">
                     <i className="flaticon-bag"></i>
@@ -256,7 +256,7 @@ function App() {
             </div>
             <div className="product-item">
               <div className="pi-pic">
-                <img src="./img/product/3.jpg" alt="" />
+                <img src="/img/product/3.jpg" alt="" />
                 <div className="pi-links">
                   <a href="#" className="add-card">
                     <i className="flaticon-bag"></i>
@@ -274,7 +274,7 @@ function App() {
             </div>
             <div className="product-item">
               <div className="pi-pic">
-                <img src="./img/product/4.jpg" alt="" />
+                <img src="/img/product/4.jpg" alt="" />
                 <div className="pi-links">
                   <a href="#" className="add-card">
                     <i className="flaticon-bag"></i>
@@ -292,7 +292,7 @@ function App() {
             </div>
             <div className="product-item">
               <div className="pi-pic">
-                <img src="./img/product/6.jpg" alt="" />
+                <img src="/img/product/6.jpg" alt="" />
                 <div className="pi-links">
                   <a href="#" className="add-card">
                     <i className="flaticon-bag"></i>
@@ -347,7 +347,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/5.jpg" alt="" />
+                  <img src="/img/product/5.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -368,7 +368,7 @@ function App() {
               <div className="product-item">
                 <div className="pi-pic">
                   <div className="tag-sale">ON SALE</div>
-                  <img src="./img/product/6.jpg" alt="" />
+                  <img src="/img/product/6.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -388,7 +388,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/7.jpg" alt="" />
+                  <img src="/img/product/7.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -408,7 +408,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/8.jpg" alt="" />
+                  <img src="/img/product/8.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -428,7 +428,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/9.jpg" alt="" />
+                  <img src="/img/product/9.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -448,7 +448,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/10.jpg" alt="" />
+                  <img src="/img/product/10.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -468,7 +468,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/11.jpg" alt="" />
+                  <img src="/img/product/11.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -488,7 +488,7 @@ function App() {
             <div className="col-lg-3 col-sm-6">
               <div className="product-item">
                 <div className="pi-pic">
-                  <img src="./img/product/12.jpg" alt="" />
+                  <img src="/img/product/12.jpg" alt="" />
                   <div className="pi-links">
                     <a href="#" className="add-card">
                       <i className="flaticon-bag"></i>
@@ -529,7 +529,7 @@ function App() {
         <div className="container">
           <div className="footer-logo text-center">
             <a href="index.html">
-              <img src="./img/logo-light.png" alt="" />
+              <img src="/img/logo-light.png" alt="" />
             </a>
           </div>
           <div className="row">
@@ -541,7 +541,7 @@ function App() {
                   mattis. Nullam frin-gilla faucibus urna, id dapibus erat
                   iaculis ut. Integer ac sem.
                 </p>
-                <img src="img/cards.png" alt="" />
+                <img src="/img/cards.png" alt="" />
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
