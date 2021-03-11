@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './css/animate.css';
 import './css/bootstrap.min.css';
+import logo from './img/logo.png';
 // import './css/flaticon.css';
 // import './css/font-awesome.min.css';
 // import './css/jquery-ui.min.css';
@@ -22,7 +23,7 @@ function App() {
             <div className="row">
               <div className="col-lg-2 text-center text-lg-left">
                 <a href="./index.html" className="site-logo">
-                  <img src="img/logo.png" alt="" />
+                  <img src={logo} alt="" />
                 </a>
               </div>
               <div className="col-xl-6 col-lg-5">
@@ -185,7 +186,7 @@ function App() {
             <div className="col-md-4 p-0 feature">
               <div className="feature-inner">
                 <div className="feature-icon">
-                  <img src="img/icons/1.png" alt="#" />
+                  <img src="./src/img/icons/1.png" alt="#" />
                 </div>
                 <h2>Fast Secure Payments</h2>
               </div>
