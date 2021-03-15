@@ -143,5 +143,39 @@
       "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
       "mark": ""
     }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "TOPS"
+    },
+    {
+      "id": 1,
+      "name": "JUMPSUITS"
+    },
+    {
+      "id": 2,
+      "name": "LINGERIE"
+    },
+    {
+      "id": 3,
+      "name": "JEANS"
+    },
+    {
+      "id": 4,
+      "name": "DRESSES"
+    },
+    {
+      "id": 5,
+      "name": "COATS"
+    },
+    {
+      "id": 6,
+      "name": "JUMPERS"
+    },
+    {
+      "id": 7,
+      "name": "LEGGINGS"
+    }
   ]
 }
