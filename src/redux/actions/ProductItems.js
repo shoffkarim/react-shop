@@ -1,4 +1,8 @@
 export const setProductItems = (items) => ({
-  action: "SET_PRODUCT_ITEMS",
+  type: "SET_PRODUCT_ITEMS",
   payload: items
 });
+
+export const setConsole = {
+  type: "CONSOLE"
+}
