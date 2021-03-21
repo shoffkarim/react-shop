@@ -1,11 +1,14 @@
 import React from "react";
 //function ProductItem({id, imageUrl, name, price, category, rating, reviews, information, mark})
 function ProductItem({id, imageUrl, name, price, mark}) {
+  console.log(mark)
   return (
     <div className="col-lg-3 col-sm-6">
       <div className="product-item">
         <div className="pi-pic">
-          <div className="tag-sale">{mark}</div>
+          {mark !== "" && mark !== undefined &&
+            <div className="tag-sale">{mark}</div>
+          }
           <img src={imageUrl} alt="" />
           <div className="pi-links">
             <a href="fake" className="add-card">

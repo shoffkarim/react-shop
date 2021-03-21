@@ -6,31 +6,13 @@ import ProductCategories from "./ProductCategories";
 import ProductItem from "./ProductItem";
 
 
-const obj = {
-  id: 0,
-  imageUrl: "/img/product/1.jpg",
-  name: "Flamboyant Pink Top",
-  price: "35.00",
-  sizes: [32, 36, 38, 42],
-  category: 0,
-  rating: 4,
-  reviews: 3,
-  information:
-    "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-  mark: "on sale",
-};
-const objCategories = {
-  id: 0,
-  name: "TOPS"
-}
-
 function ProductFilter() {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
     dispatch(fetchCategories());
     dispatch(fetchItems());
-  }, []);
+  }, [dispatch]);
 
   const items = useSelector(({ProductItems}) => ProductItems.items);
   const categories = useSelector(({ProductCategories}) => ProductCategories.items);
