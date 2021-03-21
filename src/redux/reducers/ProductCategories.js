@@ -3,9 +3,9 @@ const InitState = {
   isLoaded: false
 }
 
-const ProductItemsReducer = (state = InitState, action) => {
+const ProductCategoriesReducer = (state = InitState, action) => {
   switch(action.type){
-    case "SET_PRODUCT_ITEMS" :
+    case "SET_PRODUCT_CATEGORIES" :
       return {
         ...state,
         items: action.payload,
@@ -16,4 +16,4 @@ const ProductItemsReducer = (state = InitState, action) => {
   }
 };
 
-export default ProductItemsReducer;
+export default ProductCategoriesReducer;
