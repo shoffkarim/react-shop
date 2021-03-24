@@ -177,5 +177,90 @@
       "id": 7,
       "name": "LEGGINGS"
     }
+  ],
+  "sliderLatestProducts": [
+    {
+      "id": 0,
+      "imageUrl": "/img/product/1.jpg",
+      "name": "Flamboyant Pink Top",
+      "price": "35.00",
+      "sizes": [32, 36, 38, 42],
+      "category": 0,
+      "rating": 4,
+      "reviews": 3,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
+      "mark": "on sale"
+    },
+    {
+      "id": 1,
+      "imageUrl": "/img/product/2.jpg",
+      "name": "Black and White Stripes Dress",
+      "price": "39.90",
+      "sizes": [32, 34, 36, 38, 40, 42],
+      "category": 0,
+      "rating": 3,
+      "reviews": 100,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
+      "mark": "new"
+    },
+    {
+      "id": 2,
+      "imageUrl": "/img/product/3.jpg",
+      "name": "Flamboyant Pink Top",
+      "price": "49.90",
+      "sizes": [32, 34, 38, 42],
+      "category": 1,
+      "rating": 5,
+      "reviews": 1,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
+      "mark": ""
+    },
+    {
+      "id": 3,
+      "imageUrl": "/img/product/4.jpg",
+      "name": "White perlum top",
+      "price": "14.90",
+      "sizes": [32, 34, 36, 42],
+      "category": 1,
+      "rating": 2,
+      "reviews": 0,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+    },
+    {
+      "id": 4,
+      "imageUrl": "/img/product/5.jpg",
+      "name": "Black and White Stripes Dress",
+      "price": "182.90",
+      "sizes": [32, 34, 36, 38, 40],
+      "category": 1,
+      "rating": 1,
+      "reviews": 3,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
+      "mark": ""
+    },
+    {
+      "id": 5,
+      "imageUrl": "/img/product/6.jpg",
+      "name": "White perlum top",
+      "price": "9.90",
+      "sizes": [42],
+      "category": 2,
+      "rating": 0,
+      "reviews": 3,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
+      "mark": ""
+    },
+    {
+      "id": 6,
+      "imageUrl": "/img/product/7.jpg",
+      "name": "Flamboyant Pink Top",
+      "price": "37.90",
+      "sizes": [32, 42],
+      "category": 3,
+      "rating": 1,
+      "reviews": 3,
+      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
+      "mark": "new"
+    }
   ]
 }

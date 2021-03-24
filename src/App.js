@@ -22,7 +22,7 @@ function App() {
       <MainSlider/>
       <Features/>
       <ProductSlider/>
-      <ProductFilter/>
+      {/* <ProductFilter/> */}
       <Banner/>
       <Footer/>
     </div>

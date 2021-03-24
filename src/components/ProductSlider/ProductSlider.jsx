@@ -1,108 +1,61 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from "swiper";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchSliderLatProdItems } from "../../redux/actions/SliderLatestProduct";
+import ProductItem from "../ProductItem/ProductItem";
+import 'swiper/swiper.scss';
+
 
 function ProductSlider() {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(fetchSliderLatProdItems());
+  }, [dispatch]);
+
+  const items = useSelector(({SliderLatestProduct}) => SliderLatestProduct.items);
+  SwiperCore.use([Navigation]);
   return (
     <section className="top-letest-product-section">
       <div className="container">
         <div className="section-title">
           <h2>LATEST PRODUCTS</h2>
         </div>
-        <div className="product-slider owl-carousel">
-          <div className="product-item">
-            <div className="pi-pic">
-              <img src="/img/product/1.jpg" alt="" />
-              <div className="pi-links">
-                <a href="fake" className="add-card">
-                  <i className="flaticon-bag"></i>
-                  <span>ADD TO CART</span>
-                </a>
-                <a href="fake" className="wishlist-btn">
-                  <i className="flaticon-heart"></i>
-                </a>
-              </div>
-            </div>
-            <div className="pi-text">
-              <h6>$35,00</h6>
-              <p>Flamboyant Pink Top </p>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="pi-pic">
-              <div className="tag-new">New</div>
-              <img src="/img/product/2.jpg" alt="" />
-              <div className="pi-links">
-                <a href="fake" className="add-card">
-                  <i className="flaticon-bag"></i>
-                  <span>ADD TO CART</span>
-                </a>
-                <a href="fake" className="wishlist-btn">
-                  <i className="flaticon-heart"></i>
-                </a>
-              </div>
-            </div>
-            <div className="pi-text">
-              <h6>$35,00</h6>
-              <p>Black and White Stripes Dress</p>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="pi-pic">
-              <img src="/img/product/3.jpg" alt="" />
-              <div className="pi-links">
-                <a href="fake" className="add-card">
-                  <i className="flaticon-bag"></i>
-                  <span>ADD TO CART</span>
-                </a>
-                <a href="fake" className="wishlist-btn">
-                  <i className="flaticon-heart"></i>
-                </a>
-              </div>
-            </div>
-            <div className="pi-text">
-              <h6>$35,00</h6>
-              <p>Flamboyant Pink Top </p>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="pi-pic">
-              <img src="/img/product/4.jpg" alt="" />
-              <div className="pi-links">
-                <a href="fake" className="add-card">
-                  <i className="flaticon-bag"></i>
-                  <span>ADD TO CART</span>
-                </a>
-                <a href="fake" className="wishlist-btn">
-                  <i className="flaticon-heart"></i>
-                </a>
-              </div>
-            </div>
-            <div className="pi-text">
-              <h6>$35,00</h6>
-              <p>Flamboyant Pink Top </p>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="pi-pic">
-              <img src="/img/product/6.jpg" alt="" />
-              <div className="pi-links">
-                <a href="fake" className="add-card">
-                  <i className="flaticon-bag"></i>
-                  <span>ADD TO CART</span>
-                </a>
-                <a href="fake" className="wishlist-btn">
-                  <i className="flaticon-heart"></i>
-                </a>
-              </div>
-            </div>
-            <div className="pi-text">
-              <h6>$35,00</h6>
-              <p>Flamboyant Pink Top </p>
-            </div>
-          </div>
-        </div>
+        {items &&
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            loop={true}
+            navigation>
+            {/* {items.map((obj) => (
+              <SwiperSlide key={obj.id}>
+                <ProductItem  {...obj}/>
+              </SwiperSlide>
+            ))} */}
+            <SwiperSlide>
+              <ProductItem  id={1} imageUrl={"/img/product/12.jpg"}  name= {"White perlum top"} price={"59.90"} mark={""}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItem  id={1} imageUrl={"/img/product/12.jpg"}  name= {"White perlum top"} price={"59.90"} mark={""}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItem  id={1} imageUrl={"/img/product/12.jpg"}  name= {"White perlum top"} price={"59.90"} mark={""}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItem  id={1} imageUrl={"/img/product/12.jpg"}  name= {"White perlum top"} price={"59.90"} mark={""}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItem  id={1} imageUrl={"/img/product/12.jpg"}  name= {"White perlum top"} price={"59.90"} mark={""}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItem  id={1} imageUrl={"/img/product/12.jpg"}  name= {"White perlum top"} price={"59.90"} mark={""}/>
+            </SwiperSlide>
+          </Swiper>
+        }
       </div>
     </section>
   );
 }
-
+//<div className="product-slider owl-carousel">
 export default ProductSlider;

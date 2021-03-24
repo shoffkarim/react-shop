@@ -5,7 +5,7 @@ const InitState = {
 
 const ProductItemsReducer = (state = InitState, action) => {
   switch(action.type){
-    case "SET_PRODUCT_ITEMS" :
+    case "SET_SLIDER_LATPROD_ITEMS" :
       return {
         ...state,
         items: action.payload,

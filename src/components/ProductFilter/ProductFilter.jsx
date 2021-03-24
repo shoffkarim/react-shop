@@ -4,7 +4,7 @@ import { fetchCategories } from "../../redux/actions/ProductCategories";
 import { fetchItems } from "../../redux/actions/ProductItems";
 import { fetchItemsWidthCategory } from "../../redux/actions/ProductItems";
 import ProductCategories from "./ProductCategories";
-import ProductItem from "./ProductItem";
+import ProductItem from "../ProductItem/ProductItem";
 
 
 function ProductFilter() {
@@ -29,10 +29,15 @@ function ProductFilter() {
           <h2>BROWSE TOP SELLING PRODUCTS</h2>
         </div>
         <ul className="product-filter-menu">
-          {categories && categories.map((obj) => <ProductCategories onSelectCategory={onSelectCategory} key={obj.id} {...obj}/>)}
+          {categories && categories.map((obj) =>
+          <ProductCategories onSelectCategory={onSelectCategory} key={obj.id} {...obj}/>)}
         </ul>
         <div className="row">
-            {items && items.map((obj) => <ProductItem key={obj.id} {...obj} />)}
+            {items && items.map((obj) => (
+              <div className="col-lg-3 col-sm-6" key={obj.id}>
+                <ProductItem {...obj} />
+              </div>
+            ))}
         </div>
         <div className="text-center pt-5">
           <button className="site-btn sb-line sb-dark">LOAD MORE</button>
