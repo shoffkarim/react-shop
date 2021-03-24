@@ -946,7 +946,7 @@ ol {
 	display: inline-block;
 }
 
-.product-filter-menu li a {
+.product-filter-menu li span {
 	color: #111111;
 	font-size: 12px;
 	font-weight: 700;
@@ -956,6 +956,13 @@ ol {
 	width: 100%;
 	padding: 10px 34px;
 	border-radius: 31px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.product-filter-menu li span:hover{
+	color:#ebebeb;
+	background:  #111111;
+	transition: all 0.4s;
 }
 
 /* ----------------

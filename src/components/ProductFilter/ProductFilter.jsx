@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../redux/actions/ProductCategories";
 import { fetchItems } from "../../redux/actions/ProductItems";
+import { fetchItemsWidthCategory } from "../../redux/actions/ProductItems";
 import ProductCategories from "./ProductCategories";
 import ProductItem from "./ProductItem";
 
@@ -14,6 +15,11 @@ function ProductFilter() {
     dispatch(fetchItems());
   }, [dispatch]);
 
+  const onSelectCategory = React.useCallback((id) => {
+    dispatch(fetchItemsWidthCategory(id));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const items = useSelector(({ProductItems}) => ProductItems.items);
   const categories = useSelector(({ProductCategories}) => ProductCategories.items);
   return (
@@ -23,7 +29,7 @@ function ProductFilter() {
           <h2>BROWSE TOP SELLING PRODUCTS</h2>
         </div>
         <ul className="product-filter-menu">
-          {categories && categories.map((obj) => <ProductCategories key={obj.id} {...obj}/>)}
+          {categories && categories.map((obj) => <ProductCategories onSelectCategory={onSelectCategory} key={obj.id} {...obj}/>)}
         </ul>
         <div className="row">
             {items && items.map((obj) => <ProductItem key={obj.id} {...obj} />)}

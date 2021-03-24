@@ -1,10 +1,10 @@
 import React from "react";
 
-function ProductCategories({id, name}) {
+function ProductCategories({id, name, onSelectCategory}) {
   return (
-      <li>
-        <a href="fake">{name}</a>
-      </li>
+    <li onClick={() => onSelectCategory(id)}>
+      <span>{name}</span>
+    </li>
   );
 }
 

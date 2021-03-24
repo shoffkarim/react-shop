@@ -1,23 +1,6 @@
 import React from "react";
-import {useDispatch} from "react-redux";
-import {setProductItems} from "../../redux/actions/ProductItems"
-
-const obj = [{
-  id: 0,
-  imageUrl: "/img/product/2.jpg",
-  name: "Flamboyant Pink Top",
-  price: "35.00",
-  sizes: [32, 36, 38, 42],
-  category: 0,
-  rating: 4,
-  reviews: 3,
-  information:
-    "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-  mark: "on sale",
-}];
 
 function ProductItem({id, imageUrl, name, price, mark}) {
-  console.log(mark)
   return (
     <div className="col-lg-3 col-sm-6">
       <div className="product-item">

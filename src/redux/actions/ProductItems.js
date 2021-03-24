@@ -10,3 +10,9 @@ export const fetchItems = () => (dispatch) => {
   .then(({data}) =>
   dispatch(setProductItems(data)));
 };
+
+export const fetchItemsWidthCategory = (categoryId) => (dispatch) => {
+  Axios.get(`http://localhost:3001/items?category=${categoryId}`)
+  .then(({data}) =>
+  dispatch(setProductItems(data)));
+}
