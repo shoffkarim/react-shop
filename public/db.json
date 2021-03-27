@@ -178,6 +178,32 @@
       "name": "LEGGINGS"
     }
   ],
+  "mainSlider": [
+    {
+      "id": 0,
+      "imgUrl": "/img/bg.jpg",
+      "title": "denim jackets",
+      "subtitle": "New Arrivals",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis",
+      "firstLinkUrl": "fake",
+      "firstLinkText": "DISCOVER",
+      "secondLinkUrl": "fake",
+      "secondLinkText": "ADD TO CART",
+      "bannerPrice": "29"
+    },
+    {
+      "id": 1,
+      "imgUrl": "/img/bg-2.jpg",
+      "title": "T-shirts",
+      "subtitle": "New collection",
+      "text": "Sports jersey shirt with sleeves and turndown collar or without collar.",
+      "firstLinkUrl": "fake",
+      "firstLinkText": "DISCOVER",
+      "secondLinkUrl": "fake",
+      "secondLinkText": "ADD TO CART",
+      "bannerPrice": "10"
+    }
+  ],
   "sliderLatestProducts": [
     {
       "id": 0,

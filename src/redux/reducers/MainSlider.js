@@ -3,9 +3,9 @@ const InitState = {
   isLoaded: false
 }
 
-const SliderLatestProductReducer = (state = InitState, action) => {
+const MainSliderProductReducer = (state = InitState, action) => {
   switch(action.type){
-    case "SET_SLIDER_LATPROD_ITEMS" :
+    case "SET_SLIDER_MAIN_ITEMS" :
       return {
         ...state,
         items: action.payload,
@@ -16,4 +16,4 @@ const SliderLatestProductReducer = (state = InitState, action) => {
   }
 };
 
-export default SliderLatestProductReducer;
+export default MainSliderProductReducer;

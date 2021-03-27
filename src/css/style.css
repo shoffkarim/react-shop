@@ -657,40 +657,40 @@ ol {
 	left: 0;
 }
 
-.hero-slider .owl-item.active .hs-item h2,
-.hero-slider .owl-item.active .hs-item span,
-.hero-slider .owl-item.active .hs-item p,
-.hero-slider .owl-item.active .hs-item .site-btn {
+.hero-slider .swiper-slide-active .hs-item h2,
+.hero-slider .swiper-slide-active .hs-item span,
+.hero-slider .swiper-slide-active .hs-item p,
+.hero-slider .swiper-slide-active .hs-item .site-btn {
 	top: 0;
 	opacity: 1;
 }
 
-.hero-slider .owl-item.active .hs-item span {
+.hero-slider .swiper-slide-active .hs-item span {
 	-webkit-transition: all 0.5s ease 0.2s;
 	-o-transition: all 0.5s ease 0.2s;
 	transition: all 0.5s ease 0.2s;
 }
 
-.hero-slider .owl-item.active .hs-item h2 {
+.hero-slider .swiper-slide-active .hs-item h2 {
 	-webkit-transition: all 0.5s ease 0.4s;
 	-o-transition: all 0.5s ease 0.4s;
 	transition: all 0.5s ease 0.4s;
 }
 
-.hero-slider .owl-item.active .hs-item p {
+.hero-slider .swiper-slide-active .hs-item p {
 	-webkit-transition: all 0.5s ease 0.6s;
 	-o-transition: all 0.5s ease 0.6s;
 	transition: all 0.5s ease 0.6s;
 }
 
-.hero-slider .owl-item.active .hs-item .site-btn {
+.hero-slider .swiper-slide-active .hs-item .site-btn {
 	-webkit-transition: all 0.5s ease 0.8s;
 	-webkit-transition: all 0.5s ease 0.8s;
 	-o-transition: all 0.5s ease 0.8s;
 	transition: all 0.5s ease 0.8s;
 }
 
-.hero-slider .owl-item.active .hs-item .offer-card {
+.hero-slider .swiper-slide-active .hs-item .offer-card {
 	opacity: 1;
 	-webkit-transform: rotate(0deg);
 	-ms-transform: rotate(0deg);
@@ -2424,4 +2424,26 @@ ol {
 	.social-links a span {
 		display: none;
 	}
+}
+
+.swiper-container{
+	position: initial !important;
+}
+.swiper-button-prev, .swiper-button-next{
+	color: #282828 !important;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	left: -20px !important;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	right: -20px !important;
+}
+.top-letest-product-section .container{
+	position: relative;
+}
+.main-slider-img{
+	position: absolute;
+	top:0;
+	left: 0;
+	object-fit: cover;
 }

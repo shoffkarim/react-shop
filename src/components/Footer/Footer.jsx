@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from "react";
 
 function Footer() {
@@ -70,8 +71,9 @@ function Footer() {
                 <div className="lp-item">
                   <div
                     className="lp-thumb set-bg"
-                    data-setbg="img/blog-thumbs/1.jpg"
-                  ></div>
+                    // style="background:url(/img/blog-thumbs/1.jpg)"
+                    >
+                    </div>
                   <div className="lp-content">
                     <h6>what shoes to wear</h6>
                     <span>Oct 21, 2018</span>
@@ -83,7 +85,7 @@ function Footer() {
                 <div className="lp-item">
                   <div
                     className="lp-thumb set-bg"
-                    data-setbg="img/blog-thumbs/2.jpg"
+                    // style="background:url(/img/blog-thumbs/2.jpg)"
                   ></div>
                   <div className="lp-content">
                     <h6>trends this year</h6>

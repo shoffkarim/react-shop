@@ -1,7 +1,6 @@
 import React from "react";
 
 function ProductItem({ id, imageUrl, name, price, mark }) {
-  console.log(imageUrl)
   return (
     <div className="product-item">
       <div className="pi-pic">

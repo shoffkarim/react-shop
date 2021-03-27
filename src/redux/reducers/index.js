@@ -1,12 +1,14 @@
 import { combineReducers } from "redux";
 import ProductItemsReducer from "./ProductItems";
 import ProductCategoriesReducer from "./ProductCategories";
-import SliderLatestProduct from "./SliderLatestProducts";
+import SliderLatestProductReducer from "./SliderLatestProducts";
+import MainSliderProductReducer from "./MainSlider";
 
 const rootReducer = combineReducers({
   ProductItems: ProductItemsReducer,
   ProductCategories: ProductCategoriesReducer,
-  SliderLatestProduct: SliderLatestProduct
+  SliderLatestProduct: SliderLatestProductReducer,
+  MainSliderItems: MainSliderProductReducer
 });
 
 export default rootReducer;

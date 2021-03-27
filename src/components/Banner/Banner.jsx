@@ -1,10 +1,12 @@
+/* eslint-disable react/style-prop-object */
 import React from "react";
 
 function Banner() {
   return (
     <section className="banner-section">
       <div className="container">
-        <div className="banner set-bg" data-setbg="img/banner-bg.jpg">
+        {/*  style="background:url(/img/banner-bg.jpg)" */}
+        <div className="banner set-bg">
           <div className="tag-new">NEW</div>
           <span>New Arrivals</span>
           <h2>STRIPED SHIRTS</h2>
