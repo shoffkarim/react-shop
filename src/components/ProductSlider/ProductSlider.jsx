@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSliderLatProdItems } from "../../redux/actions/SliderLatestProduct";
 import ProductItem from "../ProductItem/ProductItem";
@@ -20,7 +20,7 @@ function ProductSlider() {
   const isLoaded = useSelector(
     ({ SliderLatestProduct }) => SliderLatestProduct.isLoaded
   );
-  SwiperCore.use([Navigation]);
+  SwiperCore.use([Navigation, Autoplay]);
   return (
     <section className="top-letest-product-section">
       {isLoaded && (
@@ -28,7 +28,7 @@ function ProductSlider() {
           <div className="section-title">
             <h2>LATEST PRODUCTS</h2>
           </div>
-          <Swiper slidesPerView={4} spaceBetween={30} loop={true} navigation>
+          <Swiper slidesPerView={4} spaceBetween={30} loop={true} speed={500} autoplay={{delay:5000}} navigation>
             {items.map((obj) => (
               <SwiperSlide key={obj.id}>
                 <ProductItem {...obj} />

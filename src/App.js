@@ -7,18 +7,17 @@ import './css/bootstrap.min.css';
 import './css/flaticon.css';
 import './css/style.css';
 
-//components
+import { Route } from "react-router-dom";
 
-import {Header, MainSlider, Features, ProductSlider, ProductFilter, Footer} from "./components";
+import {Header, Footer} from "./components";
+import { Home, Item } from './pages';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <MainSlider/>
-      <Features/>
-      <ProductSlider/>
-      <ProductFilter/>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/item" component={Item}/>
       <Footer/>
     </div>
 

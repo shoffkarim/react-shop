@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from 'swiper';
 import "swiper/swiper.scss";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -17,12 +18,12 @@ function MainSlider() {
   const isLoaded = useSelector(
     ({ MainSliderItems }) => MainSliderItems.isLoaded
   );
-
+  SwiperCore.use([Autoplay])
   return (
     <section className="hero-section">
       <div className="hero-slider">
         {isLoaded && (
-          <Swiper>
+          <Swiper loop={true} speed={700} autoplay={{delay:5000}}>
             {items.map((obj) => (
               <SwiperSlide key={obj.id}>
                 <div className="hs-item set-bg">

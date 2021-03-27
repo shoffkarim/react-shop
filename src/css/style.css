@@ -15,7 +15,6 @@ body {
 	height: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 
 h1,
@@ -501,9 +500,6 @@ ol {
   Features
 ---------------------*/
 
-.hero-section {
-	padding-bottom: 54px;
-}
 
 .hero-slider .hs-item {
 	position: relative;
@@ -2446,4 +2442,11 @@ ol {
 	top:0;
 	left: 0;
 	object-fit: cover;
+}
+.features-section{
+	margin-top: -7px;
+}
+.product-thumbs-style{
+	overflow: hidden;
+	outline: none;
 }
