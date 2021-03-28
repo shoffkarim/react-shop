@@ -1,49 +1,46 @@
 import React from "react";
+import classNames from "classnames";
 
-function ItemDetails() {
+function ItemDetails({name, price, sizes, rating, reviews, information, careDetails, shippingReturns}) {
+  const avaibleSizes = [32, 34, 36, 38, 40, 42];
+  const maxRating = 5;
+  const ratingArray = [];
+  for(let i = 0; i < maxRating; i++){
+    if( i < rating){
+      ratingArray.push(<i className="fa fa-star-o"></i>);
+    } else {
+      ratingArray.push(<i className="fa fa-star-o fa-fade"></i>);
+    }
+  }
+
+
   return (
     <div className="col-lg-6 product-details">
-      <h2 className="p-title">White peplum top</h2>
-      <h3 className="p-price">$39.90</h3>
+      <h2 className="p-title">{name}</h2>
+      <h3 className="p-price">${price}</h3>
       <h4 className="p-stock">
         Available: <span>In Stock</span>
       </h4>
       <div className="p-rating">
-        <i className="fa fa-star-o"></i>
-        <i className="fa fa-star-o"></i>
-        <i className="fa fa-star-o"></i>
-        <i className="fa fa-star-o"></i>
-        <i className="fa fa-star-o fa-fade"></i>
+        {rating && ratingArray.map((star) => star)}
       </div>
       <div className="p-review">
-        <a href="fake">3 reviews</a>|<a href="fake">Add your review</a>
+        <a href="fake">{reviews} reviews</a>|<a href="fake">Add your review</a>
       </div>
       <div className="fw-size-choose">
         <p>Size</p>
-        <div className="sc-item">
-          <input type="radio" name="sc" id="xs-size" />
-          <label for="xs-size">32</label>
-        </div>
-        <div className="sc-item">
-          <input type="radio" name="sc" id="s-size" />
-          <label for="s-size">34</label>
-        </div>
-        <div className="sc-item">
-          <input type="radio" name="sc" id="m-size" checked="" />
-          <label for="m-size">36</label>
-        </div>
-        <div className="sc-item">
-          <input type="radio" name="sc" id="l-size" />
-          <label for="l-size">38</label>
-        </div>
-        <div className="sc-item disable">
-          <input type="radio" name="sc" id="xl-size" disabled />
-          <label for="xl-size">40</label>
-        </div>
-        <div className="sc-item">
-          <input type="radio" name="sc" id="xxl-size" />
-          <label for="xxl-size">42</label>
-        </div>
+        {avaibleSizes &&
+          avaibleSizes.map((number, index) =>
+            (
+              <div className={classNames("sc-item", {
+                disable: !sizes.includes(number),
+              })}>
+                <input type="radio" name="sc" id={index} />
+                <label for="xs-size">{number}</label>
+              </div>
+            )
+          )
+        }
       </div>
       <div className="quantity">
         <p>Quantity</p>
@@ -73,19 +70,7 @@ function ItemDetails() {
             aria-labelledby="headingOne"
             data-parent="#accordion"
           >
-            <div className="panel-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                pharetra tempor so dales. Phasellus sagittis auctor gravida.
-                Integer bibendum sodales arcu id te mpus. Ut consectetur lacus
-                leo, non scelerisque nulla euismod nec.
-              </p>
-              <p>Approx length 66cm/26" (Based on a UK size 8 sample)</p>
-              <p>Mixed fibres</p>
-              <p>
-                The Model wears a UK size 8/ EU size 36/ US size 4 and her
-                height is 5'8"
-              </p>
+            <div className="panel-body" dangerouslySetInnerHTML={{__html: information}}>
             </div>
           </div>
         </div>
@@ -109,12 +94,8 @@ function ItemDetails() {
           >
             <div className="panel-body">
               <img src="./img/cards.png" alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                pharetra tempor so dales. Phasellus sagittis auctor gravida.
-                Integer bibendum sodales arcu id te mpus. Ut consectetur lacus
-                leo, non scelerisque nulla euismod nec.
-              </p>
+              <div dangerouslySetInnerHTML={{__html: careDetails}}>
+              </div>
             </div>
           </div>
         </div>
@@ -136,19 +117,7 @@ function ItemDetails() {
             aria-labelledby="headingThree"
             data-parent="#accordion"
           >
-            <div className="panel-body">
-              <h4>7 Days Returns</h4>
-              <p>
-                Cash on Delivery Available
-                <br />
-                Home Delivery <span>3 - 4 days</span>
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                pharetra tempor so dales. Phasellus sagittis auctor gravida.
-                Integer bibendum sodales arcu id te mpus. Ut consectetur lacus
-                leo, non scelerisque nulla euismod nec.
-              </p>
+            <div className="panel-body" dangerouslySetInnerHTML={{__html: shippingReturns}}>
             </div>
           </div>
         </div>
