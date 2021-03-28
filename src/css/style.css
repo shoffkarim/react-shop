@@ -1485,7 +1485,7 @@ ol {
 	position: absolute;
 }
 
-.fw-size-choose input[type=radio]:checked+label {
+.fw-size-choose .sc-item.active label {
 	background: #f51167;
 	color: #fff;
 }
@@ -1618,13 +1618,14 @@ ol {
 	border: 2px solid #414141;
 }
 
-.product-details .fw-size-choose input[type=radio]:checked+label {
+.product-details .fw-size-choose  .sc-item.active label {
 	border: 2px solid #f51167;
 }
 
 .product-details .fw-size-choose .disable label {
 	border: 2px solid #e1e1e1;
 	color: #cacaca;
+	pointer-events: none;
 }
 
 .product-details .site-btn {

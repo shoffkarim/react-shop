@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 function ItemDetails({name, price, sizes, rating, reviews, information, careDetails, shippingReturns}) {
+  const [activeSize, setActiveSize] = React.useState(sizes[0]);
   const avaibleSizes = [32, 34, 36, 38, 40, 42];
   const maxRating = 5;
   const ratingArray = [];
@@ -13,6 +14,9 @@ function ItemDetails({name, price, sizes, rating, reviews, information, careDeta
     }
   }
 
+  const onSelectSize = (number) => {
+    setActiveSize(number);
+  };
 
   return (
     <div className="col-lg-6 product-details">
@@ -34,9 +38,12 @@ function ItemDetails({name, price, sizes, rating, reviews, information, careDeta
             (
               <div className={classNames("sc-item", {
                 disable: !sizes.includes(number),
-              })}>
-                <input type="radio" name="sc" id={index} />
-                <label for="xs-size">{number}</label>
+                active: number === activeSize
+              })}
+              onClick={() => onSelectSize(number)}
+              >
+                <input type="radio" name="sc" id={index} checked={index === activeSize ? false : true}/>
+                <label for={index}>{number}</label>
               </div>
             )
           )
