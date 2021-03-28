@@ -1,22 +1,41 @@
 import React from "react";
 import classNames from "classnames";
+import QuantityCounter from "../QuantityCounter/QuantityCounter";
 
-function ItemDetails({name, price, sizes, rating, reviews, information, careDetails, shippingReturns}) {
+function ItemDetails({
+  name,
+  price,
+  sizes,
+  rating,
+  reviews,
+  information,
+  blockInfo,
+}) {
   const [activeSize, setActiveSize] = React.useState(sizes[0]);
   const avaibleSizes = [32, 34, 36, 38, 40, 42];
+  const onSelectSize = (number) => {
+    setActiveSize(number);
+  };
+
   const maxRating = 5;
   const ratingArray = [];
-  for(let i = 0; i < maxRating; i++){
-    if( i < rating){
+  for (let i = 0; i < maxRating; i++) {
+    if (i < rating) {
       ratingArray.push(<i className="fa fa-star-o"></i>);
     } else {
       ratingArray.push(<i className="fa fa-star-o fa-fade"></i>);
     }
   }
 
-  const onSelectSize = (number) => {
-    setActiveSize(number);
-  };
+  const [activeBlockInfo, setActiveBlockInfo] = React.useState(blockInfo[0].id);
+  const onSetActiveBlock = (index) => {
+    if(index === activeBlockInfo){
+      setActiveBlockInfo(-1);
+    } else {
+      setActiveBlockInfo(index);
+    }
+
+  }
 
   return (
     <div className="col-lg-6 product-details">
@@ -34,101 +53,51 @@ function ItemDetails({name, price, sizes, rating, reviews, information, careDeta
       <div className="fw-size-choose">
         <p>Size</p>
         {avaibleSizes &&
-          avaibleSizes.map((number, index) =>
-            (
-              <div className={classNames("sc-item", {
+          avaibleSizes.map((number, index) => (
+            <div
+              className={classNames("sc-item", {
                 disable: !sizes.includes(number),
-                active: number === activeSize
+                active: number === activeSize,
               })}
               onClick={() => onSelectSize(number)}
-              >
-                <input type="radio" name="sc" id={index} checked={index === activeSize ? false : true}/>
-                <label for={index}>{number}</label>
-              </div>
-            )
-          )
-        }
+            >
+              <input
+                type="radio"
+                name="sc"
+                id={index}
+                checked={index === activeSize ? false : true}
+              />
+              <label for={index}>{number}</label>
+            </div>
+          ))}
       </div>
-      <div className="quantity">
-        <p>Quantity</p>
-        <div className="pro-qty">
-          <input type="text" value="1" />
-        </div>
-      </div>
+      <QuantityCounter text={"Quantity"} />
       <a href="fake" className="site-btn">
-        SHOP NOW
+        ADD TO CART
       </a>
-      <div id="accordion" className="accordion-area">
-        <div className="panel">
-          <div className="panel-header" id="headingOne">
-            <button
-              className="panel-link active"
-              data-toggle="collapse"
-              data-target="#collapse1"
-              aria-expanded="true"
-              aria-controls="collapse1"
-            >
-              information
-            </button>
-          </div>
-          <div
-            id="collapse1"
-            className="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div className="panel-body" dangerouslySetInnerHTML={{__html: information}}>
-            </div>
-          </div>
-        </div>
-        <div className="panel">
-          <div className="panel-header" id="headingTwo">
-            <button
-              className="panel-link"
-              data-toggle="collapse"
-              data-target="#collapse2"
-              aria-expanded="false"
-              aria-controls="collapse2"
-            >
-              care details{" "}
-            </button>
-          </div>
-          <div
-            id="collapse2"
-            className="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div className="panel-body">
-              <img src="./img/cards.png" alt="" />
-              <div dangerouslySetInnerHTML={{__html: careDetails}}>
+      {blockInfo && (
+        <div id="accordion" className="accordion-area">
+          {blockInfo.map((obj, index) => (
+            <div className="panel">
+              <div className="panel-header">
+                <button className={classNames("panel-link",{
+                  active: index === activeBlockInfo
+                })}
+                  onClick={() => onSetActiveBlock(index)}
+                >{obj.title}</button>
+              </div>
+              <div className={classNames("collapse",{
+                show: index === activeBlockInfo
+              })}>
+                <div
+                  className="panel-body"
+                  dangerouslySetInnerHTML={{ __html: obj.text }}
+                ></div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-        <div className="panel">
-          <div className="panel-header" id="headingThree">
-            <button
-              className="panel-link"
-              data-toggle="collapse"
-              data-target="#collapse3"
-              aria-expanded="false"
-              aria-controls="collapse3"
-            >
-              shipping & Returns
-            </button>
-          </div>
-          <div
-            id="collapse3"
-            className="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion"
-          >
-            <div className="panel-body" dangerouslySetInnerHTML={{__html: shippingReturns}}>
-            </div>
-          </div>
-        </div>
-      </div>
+      )}
       <div className="social-sharing">
         <a href="fake">
           <i className="fa fa-google-plus"></i>

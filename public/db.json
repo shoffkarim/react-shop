@@ -9,9 +9,23 @@
       "category": 0,
       "rating": 4,
       "reviews": 3,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": "on sale"
     },
     {
@@ -23,9 +37,23 @@
       "category": 0,
       "rating": 3,
       "reviews": 100,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": "new"
     },
     {
@@ -37,9 +65,23 @@
       "category": 1,
       "rating": 2,
       "reviews": 1,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -51,9 +93,23 @@
       "category": 1,
       "rating": 2,
       "reviews": 0,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -65,9 +121,23 @@
       "category": 1,
       "rating": 1,
       "reviews": 3,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -79,9 +149,23 @@
       "category": 2,
       "rating": 0,
       "reviews": 3,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -93,9 +177,23 @@
       "category": 3,
       "rating": 1,
       "reviews": 3,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": "new"
     },
     {
@@ -107,9 +205,23 @@
       "category": 4,
       "rating": 2,
       "reviews": 3,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -121,9 +233,23 @@
       "category": 5,
       "rating": 3,
       "reviews": 10,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -135,9 +261,23 @@
       "category": 6,
       "rating": 4,
       "reviews": 3,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -149,9 +289,23 @@
       "category": 0,
       "rating": 5,
       "reviews": 2,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     },
     {
@@ -163,9 +317,23 @@
       "category": 0,
       "rating": 4,
       "reviews": 1,
-      "information": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>",
-      "careDetails": "p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
-      "shippingReturns": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>",
+      "blockInfo": [
+        {
+          "id": 0,
+          "title": "information",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p><br><p>Approx length 66cm/26 (Based on a UK size 8 sample)</p>"
+        },
+        {
+          "id": 1,
+          "title": "care details",
+          "text": "<img src='./img/cards.png' alt='payment cards' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        },
+        {
+          "id": 2,
+          "title": "shipping & Returns",
+          "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
+        }
+      ],
       "mark": ""
     }
   ],

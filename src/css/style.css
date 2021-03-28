@@ -1466,6 +1466,9 @@ ol {
 	position: relative;
 	margin-right: 5px;
 }
+.fw-size-choose .sc-item.disable{
+	pointer-events: none;
+}
 
 .fw-size-choose label {
 	display: inline-block;
@@ -1698,6 +1701,7 @@ ol {
 	font-size: 14px;
 	text-align: center;
 	background-color: transparent;
+	pointer-events: none;
 }
 
 .related-product-section {
