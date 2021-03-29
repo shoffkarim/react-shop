@@ -1,31 +1,74 @@
 import React from "react";
 
-function ItemSlider({imageUrl}) {
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Lazy, Thumbs } from "swiper";
+import "swiper/swiper.scss";
+
+function ItemSlider({ imageUrl }) {
+  SwiperCore.use([Lazy, Thumbs]);
+
+  const [thumbsSwiper, setThumbsSwiper] = React.useState(null)
+
+  const images = [
+    {
+      src: "img/single-product/thumb-1.jpg",
+    },
+    {
+      src: "img/single-product/thumb-2.jpg",
+    },
+    {
+      src: "img/single-product/thumb-3.jpg",
+    },
+    {
+      src: "img/single-product/thumb-4.jpg",
+    },
+  ];
+
+  let paramsSwiper = {
+    lazy: true,
+    loop: false,
+  };
+
+  let paramsThumbSwiper = {
+    slidesPerView: 4,
+    slideToClickedSlide: true,
+    lazy: false,
+    loop: true,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  };
+
+
   return (
     <div className="col-lg-6">
-      <div className="product-pic-zoom">
-        <img
-          className="product-big-img"
-          src={imageUrl}
-          alt=""
-        />
-      </div>
-      <div className="product-thumbs product-thumbs-style">
-        <div className="product-thumbs-track">
-          <div className="pt active" data-imgbigurl="img/single-product/1.jpg">
-            <img src="img/single-product/thumb-1.jpg" alt="" />
-          </div>
-          <div className="pt" data-imgbigurl="img/single-product/2.jpg">
-            <img src="img/single-product/thumb-2.jpg" alt="" />
-          </div>
-          <div className="pt" data-imgbigurl="img/single-product/3.jpg">
-            <img src="img/single-product/thumb-3.jpg" alt="" />
-          </div>
-          <div className="pt" data-imgbigurl="img/single-product/4.jpg">
-            <img src="img/single-product/thumb-4.jpg" alt="" />
-          </div>
+      {imageUrl && (
+        <div>
+          <Swiper {...paramsSwiper} thumbs={{swiper: thumbsSwiper}} >
+            {images.map((image, id) => (
+              <SwiperSlide key={`slide_${id}`}>
+                <div className="product-pic-zoom">
+                  <img
+                    className="product-big-img swiper-lazy"
+                    data-src={image.src}
+                    alt=""
+                    key={image.src}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <Swiper {...paramsThumbSwiper} onSwiper={setThumbsSwiper}>
+            {images.map((image, id) => (
+              <SwiperSlide key={`slide_${id}`}>
+                <div className="pt active">
+                  <img src={image.src} alt="" key={image.src} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </div>
+      )}
     </div>
   );
 }
