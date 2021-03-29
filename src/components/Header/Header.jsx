@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import logo from './img/logo.png';
 
 function Header() {
@@ -8,9 +9,9 @@ function Header() {
         <div className="container">
           <div className="row">
             <div className="col-lg-2 text-center text-lg-left">
-              <a href="./index.html" className="site-logo">
+              <Link to={"/"} className="site-logo">
                 <img src={logo} alt="" />
-              </a>
+              </Link>
             </div>
             <div className="col-xl-6 col-lg-5">
               <form className="header-search-form">

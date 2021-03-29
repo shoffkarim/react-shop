@@ -7,6 +7,7 @@ import "swiper/swiper.scss";
 
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMainSliderItems } from "../../redux/actions/MainSlider";
+import { Link } from "react-router-dom";
 
 function MainSlider() {
   const dispatch = useDispatch();
@@ -35,9 +36,9 @@ function MainSlider() {
                         <span>{obj.subtitle}</span>
                         <h2>{obj.title}</h2>
                         <p>{obj.text}</p>
-                        <a href={obj.firstLinkUrl} className="site-btn sb-line">
+                        <Link to={`${obj.firstLinkUrl}`} className="site-btn sb-line">
                           {obj.firstLinkText}
-                        </a>
+                        </Link>
                         <a
                           href={obj.secondLinkUrl}
                           className="site-btn sb-white"
