@@ -1,36 +1,22 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Lazy, Thumbs } from "swiper";
+import SwiperCore, { Lazy, Thumbs, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 
-function ItemSlider({ imageUrl }) {
-  SwiperCore.use([Lazy, Thumbs]);
-
+function ItemSlider({ imageUrl, images}) {
+  SwiperCore.use([Lazy, Thumbs, Autoplay]);
   const [thumbsSwiper, setThumbsSwiper] = React.useState(null)
-
-  const images = [
-    {
-      src: "img/single-product/thumb-1.jpg",
-    },
-    {
-      src: "img/single-product/thumb-2.jpg",
-    },
-    {
-      src: "img/single-product/thumb-3.jpg",
-    },
-    {
-      src: "img/single-product/thumb-4.jpg",
-    },
-  ];
+  console.log(images);
 
   let paramsSwiper = {
     lazy: true,
-    loop: false,
+    loop: true,
   };
 
   let paramsThumbSwiper = {
     slidesPerView: 4,
+    spaceBetween: 23,
     slideToClickedSlide: true,
     lazy: false,
     loop: true,
@@ -39,31 +25,28 @@ function ItemSlider({ imageUrl }) {
     watchSlidesProgress: true,
   };
 
-
   return (
     <div className="col-lg-6">
-      {imageUrl && (
+      {images && (
         <div>
-          <Swiper {...paramsSwiper} thumbs={{swiper: thumbsSwiper}} >
-            {images.map((image, id) => (
+          <Swiper {...paramsSwiper} thumbs={{swiper: thumbsSwiper}} autoplay={{delay:5000}}>
+            {images.top.map((image, id) => (
               <SwiperSlide key={`slide_${id}`}>
                 <div className="product-pic-zoom">
                   <img
                     className="product-big-img swiper-lazy"
-                    data-src={image.src}
+                    data-src={image}
                     alt=""
-                    key={image.src}
+                    key={image}
                   />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
           <Swiper {...paramsThumbSwiper} onSwiper={setThumbsSwiper}>
-            {images.map((image, id) => (
+            {images.thumbs.map((image, id) => (
               <SwiperSlide key={`slide_${id}`}>
-                <div className="pt active">
-                  <img src={image.src} alt="" key={image.src} />
-                </div>
+                  <img src={image} alt="" key={image} />
               </SwiperSlide>
             ))}
           </Swiper>

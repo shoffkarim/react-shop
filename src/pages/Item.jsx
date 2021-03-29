@@ -12,6 +12,8 @@ function Item() {
 
   const item = useSelector(({CardItem}) => CardItem.item)
   const isLoaded = useSelector(({CardItem}) => CardItem.isLoaded)
+
+  console.log(item);
   return (
 
     <div>

@@ -2455,3 +2455,6 @@ ol {
 	overflow: hidden;
 	outline: none;
 }
+.swiper-slide-thumb-active img{
+	border: 2px solid #f51167;
+}
