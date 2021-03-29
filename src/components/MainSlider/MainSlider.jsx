@@ -1,5 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from 'swiper';
 import "swiper/swiper.scss";

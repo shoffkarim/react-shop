@@ -1,10 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCardItem } from "../redux/actions/CardItem";
-import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
-import ItemDetails from "../components/ItemDetails/ItemDetails";
-import ItemSlider from "../components/ItemSlider/ItemSlider";
-import ProductSlider from "../components/ProductSlider/ProductSlider";
+import {Breadcrumbs, ItemDetails, ItemSlider, ProductSlider} from "../components";
 
 function Item() {
   const id = 2;

@@ -1,11 +1,15 @@
 import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchSliderLatProdItems } from "../../redux/actions/SliderLatestProduct";
-import ProductItem from "../ProductItem/ProductItem";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
+
+import { useDispatch, useSelector } from "react-redux";
+import { fetchSliderLatProdItems } from "../../redux/actions/SliderLatestProduct";
+
+import ProductItem from "../ProductItem/ProductItem";
+
 
 function ProductSlider() {
   const dispatch = useDispatch();

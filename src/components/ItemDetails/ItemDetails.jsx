@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import QuantityCounter from "../QuantityCounter/QuantityCounter";
+import { QuantityCounter } from "..";
 
 function ItemDetails({
   name,

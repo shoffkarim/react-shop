@@ -1,10 +1,12 @@
 import React from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../redux/actions/ProductCategories";
 import { fetchItems } from "../../redux/actions/ProductItems";
 import { fetchItemsWidthCategory } from "../../redux/actions/ProductItems";
+
 import ProductCategories from "./ProductCategories";
-import ProductItem from "../ProductItem/ProductItem";
+import { ProductItem } from "..";
 
 
 function ProductFilter() {
