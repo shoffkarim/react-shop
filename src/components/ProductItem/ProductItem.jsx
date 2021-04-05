@@ -9,7 +9,7 @@ function ProductItem({ id, imageUrl, name, price, mark }) {
         )}
         <img src={imageUrl} alt="" />
         <div className="pi-links">
-          <a href="fake" className="add-card">
+          <a href={`/item/${id}`} className="add-card">
             <i className="flaticon-bag"></i>
             <span>ADD TO CART</span>
           </a>

@@ -2,18 +2,19 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCardItem } from "../redux/actions/CardItem";
 import {Breadcrumbs, ItemDetails, ItemSlider, ProductSlider} from "../components";
+import { useParams } from "react-router";
 
 function Item() {
-  const id = 2;
+  
+  let { id } = useParams();
   const dispatch = useDispatch();
   React.useEffect(() => {
     dispatch(fetchCardItem(id))
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   const item = useSelector(({CardItem}) => CardItem.item)
   const isLoaded = useSelector(({CardItem}) => CardItem.isLoaded)
 
-  console.log(item);
   return (
 
     <div>

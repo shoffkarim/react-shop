@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Header/>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/item" component={Item}/>
+      <Route exact path="/item/:id" component={Item}/>
       <Footer/>
     </div>
 
