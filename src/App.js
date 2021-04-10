@@ -11,7 +11,7 @@ import './css/style.css';
 import { Route } from "react-router-dom";
 
 import {Header, Footer} from "./components";
-import { Home, Item } from './pages';
+import { Cart, Home, Item } from './pages';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <Header/>
       <Route exact path="/" component={Home}/>
       <Route exact path="/item/:id" component={Item}/>
+      <Route exact path="/cart" component={Cart}/>
       <Footer/>
     </div>
 

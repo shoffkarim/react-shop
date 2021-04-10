@@ -1,14 +1,16 @@
 import React from "react";
 import classNames from "classnames";
 import { QuantityCounter } from "..";
+import { AddToCart } from "../../redux/actions/Cart";
+import { useDispatch} from "react-redux";
 
 function ItemDetails({
+  id,
   name,
   price,
   sizes,
   rating,
   reviews,
-  information,
   blockInfo,
 }) {
   const [activeSize, setActiveSize] = React.useState(sizes[0]);
@@ -21,9 +23,9 @@ function ItemDetails({
   const ratingArray = [];
   for (let i = 0; i < maxRating; i++) {
     if (i < rating) {
-      ratingArray.push(<i className="fa fa-star-o"></i>);
+      ratingArray.push(<i className="fa fa-star-o" key={i}></i>);
     } else {
-      ratingArray.push(<i className="fa fa-star-o fa-fade"></i>);
+      ratingArray.push(<i className="fa fa-star-o fa-fade" key={i}></i>);
     }
   }
 
@@ -34,7 +36,16 @@ function ItemDetails({
     } else {
       setActiveBlockInfo(index);
     }
-
+  }
+  const dispatch = useDispatch();
+  const addToCart = () => {
+    const obj = {
+      id,
+      name,
+      price,
+      size: activeSize
+    }
+    dispatch(AddToCart(obj));
   }
 
   return (
@@ -60,25 +71,27 @@ function ItemDetails({
                 active: number === activeSize,
               })}
               onClick={() => onSelectSize(number)}
+              key={index}
             >
               <input
                 type="radio"
                 name="sc"
                 id={index}
                 checked={index === activeSize ? false : true}
+                readOnly={true}
               />
-              <label for={index}>{number}</label>
+              <label htmlFor={index}>{number}</label>
             </div>
           ))}
       </div>
       <QuantityCounter text={"Quantity"} />
-      <a href="fake" className="site-btn">
+      <button onClick={addToCart} className="site-btn">
         ADD TO CART
-      </a>
+      </button>
       {blockInfo && (
         <div id="accordion" className="accordion-area">
           {blockInfo.map((obj, index) => (
-            <div className="panel">
+            <div className="panel" key={index}>
               <div className="panel-header">
                 <button className={classNames("panel-link",{
                   active: index === activeBlockInfo

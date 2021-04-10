@@ -4,6 +4,7 @@ import ProductCategoriesReducer from "./ProductCategories";
 import SliderLatestProductReducer from "./SliderLatestProducts";
 import MainSliderProductReducer from "./MainSlider";
 import CardItemReducer from "./CardItem";
+import CartReducer from "./Cart";
 
 const rootReducer = combineReducers({
   ProductItems: ProductItemsReducer,
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
   SliderLatestProduct: SliderLatestProductReducer,
   MainSliderItems: MainSliderProductReducer,
   CardItem: CardItemReducer,
+  Cart: CartReducer,
 });
 
 export default rootReducer;

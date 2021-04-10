@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductItem({ id, imageUrl, name, price, mark }) {
   return (
@@ -9,13 +10,13 @@ function ProductItem({ id, imageUrl, name, price, mark }) {
         )}
         <img src={imageUrl} alt="" />
         <div className="pi-links">
-          <a href={`/item/${id}`} className="add-card">
+          <Link to={`/item/${id}`} className="add-card">
             <i className="flaticon-bag"></i>
             <span>ADD TO CART</span>
-          </a>
-          <a href="fake" className="wishlist-btn">
+          </Link>
+          {/* <a href="fake" className="wishlist-btn">
             <i className="flaticon-heart"></i>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="pi-text">

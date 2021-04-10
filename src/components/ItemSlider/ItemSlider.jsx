@@ -7,7 +7,6 @@ import "swiper/swiper.scss";
 function ItemSlider({ imageUrl, images}) {
   SwiperCore.use([Lazy, Thumbs, Autoplay]);
   const [thumbsSwiper, setThumbsSwiper] = React.useState(null)
-  console.log(images);
 
   let paramsSwiper = {
     lazy: true,

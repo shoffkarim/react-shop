@@ -23,16 +23,16 @@ function Header() {
             </div>
             <div className="col-xl-4 col-lg-5">
               <div className="user-panel">
-                <div className="up-item">
+                {/* <div className="up-item">
                   <i className="flaticon-profile"></i>
                   <a href="fake">Sign</a> In or <a href="fake">Create Account</a>
-                </div>
+                </div> */}
                 <div className="up-item">
                   <div className="shopping-card">
                     <i className="flaticon-bag"></i>
                     <span>0</span>
                   </div>
-                  <a href="fake">Shopping Cart</a>
+                  <Link to={"/cart"}>Shopping Cart</Link>
                 </div>
               </div>
             </div>

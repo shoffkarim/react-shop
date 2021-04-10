@@ -19,9 +19,9 @@ function QuantityCounter({ text }) {
     <div className="quantity">
       {text && <p>{text}</p>}
       <div className="pro-qty">
-        <span class="dec qtybtn" onClick={() => decValue()}>-</span>
-        <input type="text" value={value}/>
-        <span class="inc qtybtn" onClick={() => incValue()}>+</span>
+        <span className="dec qtybtn" onClick={() => decValue()}>-</span>
+        <input type="text" value={value} readOnly={true}/>
+        <span className="inc qtybtn" onClick={() => incValue()}>+</span>
       </div>
     </div>
   );
