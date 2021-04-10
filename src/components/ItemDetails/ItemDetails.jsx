@@ -7,6 +7,7 @@ import { useDispatch} from "react-redux";
 function ItemDetails({
   id,
   name,
+  cartImgUrl,
   price,
   sizes,
   rating,
@@ -37,12 +38,18 @@ function ItemDetails({
       setActiveBlockInfo(index);
     }
   }
+  let quantity = 1;
+  const onChangeQuantity = (value) => {
+    quantity = value
+  }
   const dispatch = useDispatch();
   const addToCart = () => {
     const obj = {
       id,
+      cartImgUrl,
       name,
       price,
+      quantity,
       size: activeSize
     }
     dispatch(AddToCart(obj));
@@ -84,7 +91,7 @@ function ItemDetails({
             </div>
           ))}
       </div>
-      <QuantityCounter text={"Quantity"} />
+      <QuantityCounter text={"Quantity"} changeQuantity={(value) => onChangeQuantity(value)}/>
       <button onClick={addToCart} className="site-btn">
         ADD TO CART
       </button>

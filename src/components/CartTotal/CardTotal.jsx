@@ -1,10 +1,10 @@
 import React from "react";
 
-function CardTotal() {
+function CardTotal({totalPrice}) {
   return (
     <div className="total-cost">
       <h6>
-        Total <span>$99.90</span>
+        Total <span>${totalPrice}</span>
       </h6>
     </div>
   );

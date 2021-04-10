@@ -29,7 +29,7 @@ function MainSlider() {
             {items.map((obj) => (
               <SwiperSlide key={obj.id}>
                 <div className="hs-item set-bg">
-                  <img src={obj.imgUrl} alt="slide" class="main-slider-img" />
+                  <img src={obj.imgUrl} alt="slide" className="main-slider-img" />
                   <div className="container">
                     <div className="row">
                       <div className="col-xl-6 col-lg-7 text-white">

@@ -1,7 +1,7 @@
 import React from "react";
 
-function QuantityCounter({ text }) {
-  const [value, setValue] = React.useState(1);
+function QuantityCounter({ text, changeQuantity, defaultValue }) {
+  const [value, setValue] = React.useState(defaultValue ? defaultValue : 1);
 
   const decValue = () => {
     if(value === 1){
@@ -20,7 +20,7 @@ function QuantityCounter({ text }) {
       {text && <p>{text}</p>}
       <div className="pro-qty">
         <span className="dec qtybtn" onClick={() => decValue()}>-</span>
-        <input type="text" value={value} readOnly={true}/>
+        <input type="text" value={value} onChange={changeQuantity(value)} readOnly={true}/>
         <span className="inc qtybtn" onClick={() => incValue()}>+</span>
       </div>
     </div>
