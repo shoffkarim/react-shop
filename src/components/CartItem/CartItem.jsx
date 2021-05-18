@@ -1,10 +1,20 @@
 import React from "react";
+import { useSelector, useDispatch} from "react-redux";
+//import { AddToCart } from "../../redux/actions/Cart";
 import { QuantityCounter } from "..";
+import { ChangeQuanity } from "../../redux/actions/Cart";
 
 function CartItem({id, cartImgUrl, name, price, quantity, size}) {
-
+  const items = useSelector(({Cart}) => Cart.items);
+  const dispatch = useDispatch();
   const onChangeQuantity = (value) => {
-    console.log(value)
+    items.forEach(function (item) {
+      if(item.id === id){
+        dispatch(ChangeQuanity(id, value))
+        // TO DO сделать action чтобы менялся объект cart в store
+      }
+    })
+    //console.log(value)
   }
   return (
     <tr>
