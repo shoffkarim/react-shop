@@ -8,7 +8,7 @@ const CartReducer = (state = InitState, action) => {
     case "ADD_TO_CART":
       const newItems = [...state.items, action.payload];
       const allPizzas = [].concat.apply([], Object.values(newItems));
-      const totalPrice = allPizzas.reduce((sum, obj) => obj.price + sum, 0);
+      const totalPrice = allPizzas.reduce((sum, obj) => (obj.price * obj.quantity) + sum, 0);
 
       return {
         ...state,

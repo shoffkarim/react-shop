@@ -2,9 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import { QuantityCounter } from "..";
 import { AddToCart } from "../../redux/actions/Cart";
-import { useDispatch} from "react-redux";
+import { useSelector, useDispatch} from "react-redux";
 
-function ItemDetails({
+const ItemDetails = React.memo(function({
   id,
   name,
   cartImgUrl,
@@ -91,7 +91,7 @@ function ItemDetails({
             </div>
           ))}
       </div>
-      <QuantityCounter text={"Quantity"} changeQuantity={(value) => onChangeQuantity(value)}/>
+      <QuantityCounter text={"Quantity"} changeQuantity={(value) => onChangeQuantity(value)} defaultValue={quantity}/>
       <button onClick={addToCart} className="site-btn">
         ADD TO CART
       </button>
@@ -137,6 +137,6 @@ function ItemDetails({
       </div>
     </div>
   );
-}
+})
 
 export default ItemDetails;
