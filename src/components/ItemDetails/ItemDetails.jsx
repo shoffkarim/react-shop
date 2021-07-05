@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { QuantityCounter } from "..";
 import { AddToCart } from "../../redux/actions/Cart";
-import { useSelector, useDispatch} from "react-redux";
+import { useDispatch} from "react-redux";
 
 const ItemDetails = React.memo(function({
   id,
