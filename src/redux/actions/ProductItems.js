@@ -6,13 +6,13 @@ export const setProductItems = (items) => ({
 });
 
 export const fetchItems = () => (dispatch) => {
-  Axios.get(`http://localhost:3001/items`)
+  Axios.get(`http://localhost:3002/items`)
   .then(({data}) =>
   dispatch(setProductItems(data)));
 };
 
 export const fetchItemsWidthCategory = (categoryId) => (dispatch) => {
-  Axios.get(`http://localhost:3001/items?category=${categoryId}`)
+  Axios.get(`http://localhost:3002/items?category=${categoryId}`)
   .then(({data}) =>
   dispatch(setProductItems(data)));
 }

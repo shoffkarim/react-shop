@@ -6,7 +6,7 @@ export const setSliderLatProdItems = (items) => ({
 });
 
 export const fetchSliderLatProdItems = () => (dispatch) => {
-  Axios.get(`http://localhost:3001/sliderLatestProducts`)
+  Axios.get(`http://localhost:3002/sliderLatestProducts`)
   .then(({data}) =>
   dispatch(setSliderLatProdItems(data)));
 };

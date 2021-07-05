@@ -6,7 +6,7 @@ export const setProductCategories = (items) => ({
 });
 
 export const fetchCategories = () => (dispatch) => {
-  Axios.get(`http://localhost:3001/categories`)
+  Axios.get(`http://localhost:3002/categories`)
   .then(({data}) =>
   dispatch(setProductCategories(data)));
 };

@@ -6,7 +6,7 @@ export const setCardItem = (item) => ({
 });
 
 export const fetchCardItem = (id) => (dispatch) => {
-  Axios.get(`http://localhost:3001/items?id=${id}`)
+  Axios.get(`http://localhost:3002/items?id=${id}`)
   .then(({data}) =>
   dispatch(setCardItem(data)));
 };
