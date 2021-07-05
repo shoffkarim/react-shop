@@ -6,7 +6,7 @@ export const setMainSliderItems = (items) => ({
 });
 
 export const fetchMainSliderItems = () => (dispatch) => {
-  Axios.get(`http://localhost:3002/mainSlider`)
+  Axios.get(`/mainSlider`)
   .then(({data}) =>
   dispatch(setMainSliderItems(data)));
 };
