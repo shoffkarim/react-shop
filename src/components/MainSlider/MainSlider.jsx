@@ -39,12 +39,6 @@ function MainSlider() {
                         <Link to={`${obj.firstLinkUrl}`} className="site-btn sb-line">
                           {obj.firstLinkText}
                         </Link>
-                        <a
-                          href={obj.secondLinkUrl}
-                          className="site-btn sb-white"
-                        >
-                          {obj.secondLinkText}
-                        </a>
                       </div>
                     </div>
                     <div className="offer-card text-white">
