@@ -70,6 +70,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/2.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": "new"
     },
     {
@@ -101,7 +115,7 @@
       ],
       "images": {
         "top": [
-          "/img/single-product/1.jpg",
+          "/img/product/3.jpg",
           "/img/single-product/2.jpg",
           "/img/single-product/3.jpg",
           "/img/single-product/4.jpg"
@@ -142,6 +156,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/4.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -171,6 +199,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/5.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -200,6 +242,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/6.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -229,6 +285,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/7.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": "new"
     },
     {
@@ -258,6 +328,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/8.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -287,6 +371,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/9.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -316,6 +414,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/10.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -345,6 +457,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/11.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     },
     {
@@ -374,6 +500,20 @@
           "text": "<h4>7 Days Returns</h4><p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>"
         }
       ],
+      "images": {
+        "top": [
+          "/img/product/12.jpg",
+          "/img/single-product/2.jpg",
+          "/img/single-product/3.jpg",
+          "/img/single-product/4.jpg"
+        ],
+        "thumbs": [
+          "/img/single-product/thumb-1.jpg",
+          "/img/single-product/thumb-2.jpg",
+          "/img/single-product/thumb-3.jpg",
+          "/img/single-product/thumb-4.jpg"
+        ]
+      },
       "mark": ""
     }
   ],

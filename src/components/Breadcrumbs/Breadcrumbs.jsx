@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Breadcrumbs() {
   return (
@@ -6,7 +7,7 @@ function Breadcrumbs() {
       <div className="container">
         <h4>Category PAge</h4>
         <div className="site-pagination">
-          <a href="fake">Home</a> /<a href="fake">Shop</a>
+          <Link to={"/"}>Home</Link> /<Link>Shop</Link>
         </div>
       </div>
     </div>

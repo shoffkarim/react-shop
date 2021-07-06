@@ -1514,7 +1514,9 @@ ol {
 .product-pic-zoom {
 	margin-bottom: 35px;
 }
-
+.product-big-img{
+	width: 100%;
+}
 .product-thumbs-track {
 	width: 1200px;
 }
@@ -2458,4 +2460,7 @@ ol {
 }
 .swiper-slide-thumb-active img{
 	border: 2px solid #f51167;
+}
+.good-message{
+	margin-top: 10px;
 }

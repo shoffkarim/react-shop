@@ -30,7 +30,6 @@ function Header() {
                 <div className="up-item">
                   <div className="shopping-card">
                     <i className="flaticon-bag"></i>
-                    <span>0</span>
                   </div>
                   <Link to={"/cart"}>Shopping Cart</Link>
                 </div>
@@ -39,7 +38,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <nav className="main-navbar">
+      {/* <nav className="main-navbar">
         <div className="container">
           <ul className="main-menu">
             <li>
@@ -102,7 +101,7 @@ function Header() {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </header>
   );
 }

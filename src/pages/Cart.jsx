@@ -1,5 +1,6 @@
 import React from "react";
 import CartTable from "../components/CartTable/CartTable";
+import { Link } from "react-router-dom";
 
 function Cart() {
   return (
@@ -12,12 +13,12 @@ function Cart() {
               <input type="text" placeholder="Enter promo code" />
               <button>Submit</button>
             </form>
-            <a href="fake" className="site-btn">
+            <Link className="site-btn">
               Proceed to checkout
-            </a>
-            <a href="fake" className="site-btn sb-dark">
+            </Link>
+            <Link className="site-btn sb-dark">
               Continue shopping
-            </a>
+            </Link>
           </div>
         </div>
       </div>

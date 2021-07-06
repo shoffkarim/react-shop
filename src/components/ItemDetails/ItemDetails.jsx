@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { QuantityCounter } from "..";
 import { AddToCart } from "../../redux/actions/Cart";
 import { useDispatch} from "react-redux";
-
+import { Link } from "react-router-dom";
 const ItemDetails = React.memo(function({
   id,
   name,
@@ -16,6 +16,8 @@ const ItemDetails = React.memo(function({
 }) {
   const [activeSize, setActiveSize] = React.useState(sizes[0]);
   const avaibleSizes = [32, 34, 36, 38, 40, 42];
+
+  const [addedMessage, setAddedMessage] = React.useState(false)
   const onSelectSize = (number) => {
     setActiveSize(number);
   };
@@ -53,6 +55,7 @@ const ItemDetails = React.memo(function({
       size: activeSize
     }
     dispatch(AddToCart(obj));
+    setAddedMessage(true);
   }
 
   return (
@@ -66,7 +69,7 @@ const ItemDetails = React.memo(function({
         {rating && ratingArray.map((star) => star)}
       </div>
       <div className="p-review">
-        <a href="fake">{reviews} reviews</a>|<a href="fake">Add your review</a>
+        <Link>{reviews} reviews</Link>|<Link>Add your review</Link>
       </div>
       <div className="fw-size-choose">
         <p>Size</p>
@@ -95,6 +98,7 @@ const ItemDetails = React.memo(function({
       <button onClick={addToCart} className="site-btn">
         ADD TO CART
       </button>
+      {addedMessage && <p class="good-message">Item successfully added</p>}
       {blockInfo && (
         <div id="accordion" className="accordion-area">
           {blockInfo.map((obj, index) => (
@@ -119,21 +123,21 @@ const ItemDetails = React.memo(function({
         </div>
       )}
       <div className="social-sharing">
-        <a href="fake">
+        <Link>
           <i className="fa fa-google-plus"></i>
-        </a>
-        <a href="fake">
+        </Link>
+        <Link>
           <i className="fa fa-pinterest"></i>
-        </a>
-        <a href="fake">
+        </Link>
+        <Link>
           <i className="fa fa-facebook"></i>
-        </a>
-        <a href="fake">
+        </Link>
+        <Link>
           <i className="fa fa-twitter"></i>
-        </a>
-        <a href="fake">
+        </Link>
+        <Link>
           <i className="fa fa-youtube"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );

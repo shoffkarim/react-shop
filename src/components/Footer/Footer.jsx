@@ -1,14 +1,14 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <section className="footer-section">
       <div className="container">
         <div className="footer-logo text-center">
-          <a href="index.html">
+          <Link to={"/"}>
             <img src="/img/logo-light.png" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="row">
           <div className="col-lg-3 col-sm-6">
@@ -27,39 +27,39 @@ function Footer() {
               <h2>Questions</h2>
               <ul>
                 <li>
-                  <a href="fake">About Us</a>
+                  <Link>About Us</Link>
                 </li>
                 <li>
-                  <a href="fake">Track Orders</a>
+                  <Link>Track Orders</Link>
                 </li>
                 <li>
-                  <a href="fake">Returns</a>
+                  <Link>Returns</Link>
                 </li>
                 <li>
-                  <a href="fake">Jobs</a>
+                  <Link>Jobs</Link>
                 </li>
                 <li>
-                  <a href="fake">Shipping</a>
+                  <Link>Shipping</Link>
                 </li>
                 <li>
-                  <a href="fake">Blog</a>
+                  <Link>Blog</Link>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="fake">Partners</a>
+                  <Link>Partners</Link>
                 </li>
                 <li>
-                  <a href="fake">Bloggers</a>
+                  <Link>Bloggers</Link>
                 </li>
                 <li>
-                  <a href="fake">Support</a>
+                  <Link>Support</Link>
                 </li>
                 <li>
-                  <a href="fake">Terms of Use</a>
+                  <Link>Terms of Use</Link>
                 </li>
                 <li>
-                  <a href="fake">Press</a>
+                  <Link>Press</Link>
                 </li>
               </ul>
             </div>
@@ -77,9 +77,9 @@ function Footer() {
                   <div className="lp-content">
                     <h6>what shoes to wear</h6>
                     <span>Oct 21, 2018</span>
-                    <a href="fake" className="readmore">
+                    <Link className="readmore">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="lp-item">
@@ -90,9 +90,9 @@ function Footer() {
                   <div className="lp-content">
                     <h6>trends this year</h6>
                     <span>Oct 21, 2018</span>
-                    <a href="fake" className="readmore">
+                    <Link className="readmore">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -124,34 +124,34 @@ function Footer() {
       <div className="social-links-warp">
         <div className="container">
           <div className="social-links">
-            <a href="fake" className="instagram">
+            <Link className="instagram">
               <i className="fa fa-instagram"></i>
               <span>instagram</span>
-            </a>
-            <a href="fake" className="google-plus">
+            </Link>
+            <Link className="google-plus">
               <i className="fa fa-google-plus"></i>
               <span>g+plus</span>
-            </a>
-            <a href="fake" className="pinterest">
+            </Link>
+            <Link className="pinterest">
               <i className="fa fa-pinterest"></i>
               <span>pinterest</span>
-            </a>
-            <a href="fake" className="facebook">
+            </Link>
+            <Link className="facebook">
               <i className="fa fa-facebook"></i>
               <span>facebook</span>
-            </a>
-            <a href="fake" className="twitter">
+            </Link>
+            <Link className="twitter">
               <i className="fa fa-twitter"></i>
               <span>twitter</span>
-            </a>
-            <a href="fake" className="youtube">
+            </Link>
+            <Link className="youtube">
               <i className="fa fa-youtube"></i>
               <span>youtube</span>
-            </a>
-            <a href="fake" className="tumblr">
+            </Link>
+            <Link className="tumblr">
               <i className="fa fa-tumblr-square"></i>
               <span>tumblr</span>
-            </a>
+            </Link>
           </div>
 
           <p className="text-white text-center mt-5">
@@ -159,9 +159,7 @@ function Footer() {
             <script>document.write(new Date().getFullYear());</script> All
             rights reserved | This template is made with{" "}
             <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-            <a href="https://colorlib.com" target="_blank" rel="noreferrer">
-              Colorlib
-            </a>
+            <Link>Colorlib</Link>
           </p>
         </div>
       </div>
